@@ -1,19 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reserve a Pet</title>
-</head>
-<body>
-    <nav style="display: block; margin: 0 auto; width: fit-content;">
+  </head>
+  <body>
+    <div>
+      <nav style="display: block; margin: 0 auto; width: fit-content">
         <ul>
-            <li style="display: inline; margin-right: 20px;"><a href="home_page.html">Home</a></li>
-            <li style="display: inline; margin-right: 20px;"><a href="dogs_page.html">Dog's</a></li>
-            <li style="display: inline; margin-right: 20px"><a href="cats_page.html">Cat's</a></li>
-            <li style="display: inline;"><a href="reservation_page.html">Reserve a Pet</a></li>
+          <li style="display: inline; margin-right: 20px">
+            <a href="home_page.html">Home</a>
+          </li>
+          <li style="display: inline; margin-right: 20px">
+            <a href="dogs_page.html">Dog's</a>
+          </li>
+          <li style="display: inline; margin-right: 20px">
+            <a href="cats_page.html">Cat's</a>
+          </li>
+          <li style="display: inline">
+            <a href="reservation_page.html">Reserve a Pet</a>
+          </li>
         </ul>
-    </nav>
-    <h1 align="center">Coming Soon</h1>
-</body>
+      </nav>
+    </div>
+    <div>
+      <h1 align="center">Reserve a Pet</h1>
+    </div>
+    <div>
+      <form align="center">
+        <table align="center">
+          <tr>
+            <td><label for="first-name">First Name</label></td>
+            <td><input id="first-name" name="first-name" /></td>
+          </tr>
+          <tr>
+            <td><label for="last-name">Last Name</label></td>
+            <td><input id="last-name" name="last-name" /></td>
+          </tr>
+          <tr>
+            <td><label for="email">Email</label></td>
+            <td>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="JohnDoe@email.com"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="phone-number">Phone Number</label></td>
+            <td>
+              <input
+                id="phone-number"
+                name="phone-number"
+                type="phone"
+                placeholder="(555)555-5555"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="hold-start-date">Hold Start Date</label></td>
+            <td>
+              <input id="hold-start-date" name="hold-start-date" type="date" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="hold-end-date">Hold End Date</label></td>
+            <td>
+              <input id="hold-end-date" name="hold-end-date" type="date" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="accommodations">Additional Options</label>
+            </td>
+            <td>
+              <label for="leash">Leash</label>
+              <input name="leash" id="leash" type="checkbox" />
+              <label for="microchip">Microchip</label>
+              <input name="microchip" id="microchip" type="checkbox" />
+              <label for="rabies">Rabies Vaccine</label>
+              <input name="rabies" id="rabies" type="checkbox" />
+              <label for="vaccine">Other Vaccines</label>
+              <input name="vaccine" id="vaccine" type="checkbox" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="animal">Animal</label>
+            </td>
+            <td>
+              <label for="cat">Cat Package</label>
+              <input id="cat" name="animal" type="radio" />
+              <label for="dog">Dog Package</label>
+              <input id="dog" name="animal" type="radio" />
+            </td>
+          </tr>
+        </table>
+        <input type="submit" value="Reserve My Pet" />
+      </form>
+    </div>
+  </body>
 </html>
