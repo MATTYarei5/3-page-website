@@ -1,0 +1,67 @@
+body,
+html {
+  background-color: lightcyan;
+  margin: auto;
+}
+
+nav {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: blueviolet;
+  background-image: url(../images/paw-solid.svg);
+  background-repeat: space;
+  width: 100%;
+  height: 60px;
+}
+
+nav > a {
+  color: aliceblue;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: cursive, sans-serif;
+  color: blueviolet;
+  font-style: italic;
+  font-size: 48px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+}
+
+form > input {
+  margin-top: 20px;
+}
+
+input:hover {
+  background-color: gray;
+  color: white;
+}
+
+tr label {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* tr input {
+  display: flex;
+} */
+
+footer > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  align-items: flex-end;
+  margin: 100px;
+}

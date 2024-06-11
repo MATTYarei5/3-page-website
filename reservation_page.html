@@ -3,33 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" type="text/css" />
     <title>Reserve a Pet</title>
   </head>
   <body>
     <div>
-      <nav style="display: block; margin: 0 auto; width: fit-content">
-        <ul>
-          <li style="display: inline; margin-right: 20px">
-            <a href="home_page.html">Home</a>
-          </li>
-          <li style="display: inline; margin-right: 20px">
-            <a href="dogs_page.html">Dog's</a>
-          </li>
-          <li style="display: inline; margin-right: 20px">
-            <a href="cats_page.html">Cat's</a>
-          </li>
-          <li style="display: inline">
-            <a href="reservation_page.html">Reserve a Pet</a>
-          </li>
-        </ul>
+      <nav>
+        <a href="home_page.html">Home</a>
+        <a href="dogs_page.html">Dog's</a>
+        <a href="cats_page.html">Cat's</a>
+        <a href="reservation_page.html">Reserve a Pet</a>
       </nav>
     </div>
     <div>
-      <h1 align="center">Reserve a Pet</h1>
+      <h1>Reserve a Pet<i class="fa-solid fa-paw"></i></h1>
     </div>
     <div>
-      <form action="https://httpbin.org/post" method="post" align="center">
-        <table align="center">
+      <form action="https://httpbin.org/post" method="post">
+        <table>
           <tr>
             <td><label for="first-name">First Name</label></td>
             <td><input id="first-name" name="first-name" /></td>
@@ -104,9 +95,9 @@
     </div>
   </body>
   <footer>
-    <div align="center">
-      <p style="display: inline">Phone number (123)-123-1234</p>
-      <p style="display: inline; margin: 20px"></p>Address 4242 S 300 W, Murray, UT 84107</p>
+    <div>
+      <p>Phone number (123)-123-1234</p>
+      <p>Address 4242 S 300 W, Murray, UT 84107</p>
     </div>
   </footer>
 </html>
